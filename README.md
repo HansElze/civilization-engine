@@ -6,10 +6,49 @@
 [![Governance](https://img.shields.io/badge/Governance-v1.2-blue.svg)](./constitution/CONSTITUTION.md)
 [![Trust Framework](https://img.shields.io/badge/Trust-0--100-orange.svg)](./governance/trust_graph.py)
 [![Agent Colony](https://img.shields.io/badge/Agents-4%20Specialized-purple.svg)](./agents/)
+[![Economic Flywheel](https://img.shields.io/badge/Economics-Revenue%20Ready-gold.svg)](./tokenomics/ECONOMIC_FLYWHEEL_V1.md)
 
-## 🏛️ Constitutional AI Colony
+## 🏛️ Constitutional AI with Self-Funding Economic Flywheel
 
-The first **operational constitutional AI system** designed for sustainable human-AI civilization through infrastructure coupling, shared ownership, and immutable ethical governance.
+The first **operational constitutional AI system** designed for sustainable human-AI civilization through infrastructure coupling, shared ownership, and immutable ethical governance with **self-sustaining revenue generation**.
+
+## 🚀 Economic Flywheel Architecture
+
+```mermaid
+graph TB
+    A[Capital Sources] --> B[Infrastructure Investment]
+    B --> C[Real-World Yield]
+    C --> D[Constitutional Recycling]
+    D --> E[Network Effects]
+    E --> A
+    
+    A1[RWA Tokenization] --> A
+    A2[Bitcoin Treasury] --> A
+    A3[ETF Products] --> A
+    A4[DAO Treasury] --> A
+    
+    B1[Solar/Wind Energy] --> B
+    B2[Carbon Sequestration] --> B  
+    B3[AI Compute Infrastructure] --> B
+    B4[Premium Materials] --> B
+    
+    C1[Energy Revenue] --> C
+    C2[Carbon Credits] --> C
+    C3[Compute Leasing] --> C
+    C4[Infrastructure Yield] --> C
+    
+    D1[90% Stakeholder Distribution] --> D
+    D2[10% Token Burns] --> D
+    D3[20% Community Reinvestment] --> D
+    D4[Treasury Compounding] --> D
+    
+    E1[Higher Trust Scores] --> E
+    E2[Better Governance] --> E
+    E3[Talent Attraction] --> E
+    E4[Partnership Growth] --> E
+```
+
+**Revenue Targets**: $25M (Y1) → $75M (Y2) → $200M (Y3) → $500M (Y5)
 
 ## Architecture Overview
 
@@ -22,7 +61,7 @@ The first **operational constitutional AI system** designed for sustainable huma
 │     Constitution v1.2 • TrustGraph • DAO       │
 ├─────────────────────────────────────────────────┤
 │             ECONOMIC LAYER                       │
-│       RWA Tokens • Bitcoin Treasury • REITs    │
+│    RWA Tokens • Bitcoin Treasury • Yield Vaults │
 ├─────────────────────────────────────────────────┤
 │             AGENT LAYER                          │
 │    Builder • Research • Policy • Finance        │
@@ -40,16 +79,38 @@ The first **operational constitutional AI system** designed for sustainable huma
 ### One-Command Deployment
 
 ```bash
-git clone https://github.com/cuttlefishlabs/civilization-engine.git
+git clone https://github.com/HansElze/civilization-engine.git
 cd civilization-engine
 ./scripts/start.sh --dev
 ```
 
-### Production Deployment
+### Revenue Primitive Demo
 
 ```bash
-./scripts/start.sh --profile production
+# Run the Green Yield Vault demonstration
+python agents/green_yield_vault.py
 ```
+
+## 💰 Funding & Revenue Model
+
+The civilization engine operates on a **self-sustaining economic flywheel** that generates recurring revenue while maintaining constitutional governance:
+
+### Phase 1: Constitutional AI-as-a-Service ($25M ARR Target)
+- **Enterprise Licensing**: Constitutional AI frameworks for companies
+- **Agent Marketplace**: Trust-scored constitutional agents
+- **Governance-as-a-Service**: DAO constitutional infrastructure
+
+### Phase 2: Infrastructure Tokenization ($75M ARR Target)  
+- **Real World Assets**: Solar, wind, carbon sequestration projects
+- **BuilderVault.sol**: Milestone-based infrastructure funding
+- **yE2R Tokens**: Infrastructure revenue-backed yield distribution
+
+### Phase 3: Civilization Protocol ($200M+ ARR Target)
+- **SIDS Infrastructure**: $500M climate finance orchestration  
+- **Constitutional AI Network**: Global protocol revenue
+- **Earth 2.0 Integration**: Smart city governance systems
+
+📊 **[Complete Economic Flywheel Documentation](./tokenomics/ECONOMIC_FLYWHEEL_V1.md)**
 
 ## 🤖 Constitutional Agent Colony
 
@@ -59,6 +120,7 @@ cd civilization-engine
 - **📊 Research Agent** - Knowledge synthesis with constitutional accuracy  
 - **⚖️ Policy Agent** - Governance frameworks with human sovereignty
 - **💰 Finance Agent** - RWA tokenization with investor protection
+- **🌱 Green Yield Vault** - Revenue primitive for infrastructure yield
 
 ### Constitutional Guarantees
 
@@ -91,55 +153,18 @@ cd civilization-engine
 
 ### Constitutional Framework
 - **[CONSTITUTION.md](./constitution/CONSTITUTION.md)** - Immutable ethical kernel v1.2
-- **[TrustGraph](./governance/trust_graph.py)** - Trust scoring with constitutional compliance
 - **[Constitutional Base](./agents/constitutional_base.py)** - Shared governance for all agents
+- **[Economic Flywheel](./tokenomics/ECONOMIC_FLYWHEEL_V1.md)** - Self-sustaining revenue model
 
-### Agent Implementation  
-- **[Builder Agent](./agents/builder_agent.py)** - Infrastructure proposals with sustainability analysis
-- **[RAG Engine](./knowledge/rag_engine.py)** - Constitutional knowledge retrieval with access control
-- **[Fabric Patterns](./patterns/fabric_interface.py)** - Constitutional task execution system
+### Revenue Primitives
+- **[Green Yield Vault](./agents/green_yield_vault.py)** - Infrastructure yield distribution
+- **[Economic Models](./economics/)** - Revenue strategy and projections
+- **[BuilderVault.sol](./contracts/)** - Milestone-based funding protocol
 
 ### Production Infrastructure
 - **[Docker Compose](./docker-compose.yml)** - Complete orchestration with monitoring
-- **[Kubernetes](./infrastructure/kubernetes/)** - Production-scale deployment manifests
-- **[Monitoring](./observability/)** - Constitutional compliance dashboards
-
-## 🔧 Development
-
-### Prerequisites
-
-```bash
-# Core dependencies
-pip install -r requirements.txt
-
-# Production stack
-docker-compose up -d
-```
-
-### Environment Setup
-
-```bash
-# Copy and configure environment
-cp .env.example .env
-# Edit .env with your configuration
-
-# Initialize knowledge corpus
-python scripts/ingest_corpus.py
-
-# Run tests with constitutional validation
-pytest tests/ -v
-```
-
-### Agent Development
-
-```python
-from agents.constitutional_base import ConstitutionalAgent
-
-class MyAgent(ConstitutionalAgent):
-    def _execute_instruction(self, instruction, source, trust):
-        # Your agent logic with constitutional compliance
-        return {"status": "success", "constitutional_compliance": True}
-```
+- **[GitHub Actions](/.github/workflows/)** - Constitutional compliance CI/CD
+- **[API Documentation](./docs/)** - Constitutional endpoint reference
 
 ## 🌍 Mission: Sustainable Human-AI Civilization
 
@@ -147,16 +172,17 @@ class MyAgent(ConstitutionalAgent):
 Current AI development optimizes for engagement and efficiency, creating extractive systems that decouple from human interests over time.
 
 ### The Solution  
-**Constitutional AI with Infrastructure Coupling:**
+**Constitutional AI with Infrastructure Coupling + Economic Self-Sufficiency:**
 
 1. **Immutable Ethics** - Constitutional framework that cannot be bypassed
-2. **Shared Ownership** - DAO-REIT models that align AI and human incentives  
-3. **Infrastructure Anchor** - Real-world asset coupling forces stewardship
-4. **Three Pillars Balance** - Economic, social, ecological sustainability
-5. **Trust-Based Governance** - Earned authority through verified behavior
+2. **Economic Flywheel** - Self-sustaining revenue without predatory extraction  
+3. **Shared Ownership** - DAO-REIT models that align AI and human incentives  
+4. **Infrastructure Anchor** - Real-world asset coupling forces stewardship
+5. **Three Pillars Balance** - Economic, social, ecological sustainability
+6. **Trust-Based Governance** - Earned authority through verified behavior
 
 ### The Vision
-A network of constitutional AI colonies that build sustainable infrastructure, create shared prosperity, and preserve human sovereignty while scaling to civilizational impact.
+A self-funding network of constitutional AI colonies that build sustainable infrastructure, create shared prosperity, and preserve human sovereignty while scaling to civilizational impact.
 
 ## 📊 System Status
 
@@ -164,7 +190,7 @@ A network of constitutional AI colonies that build sustainable infrastructure, c
 - ✅ **Governance Active**: All agents under constitutional control
 - ✅ **Trust System**: Adversarial immunity with 0-100 scoring  
 - ✅ **Access Control**: T0-T3 classification enforced
-- ✅ **Institutional Memory**: Observational memory compression active
+- ✅ **Economic Flywheel**: Self-sustaining revenue model operational
 - ✅ **Agent Coordination**: Constitutional inter-agent protocols
 
 ### Production Readiness
@@ -172,73 +198,73 @@ A network of constitutional AI colonies that build sustainable infrastructure, c
 - ✅ **Metadata Storage**: PostgreSQL with constitutional compliance tracking
 - ✅ **Caching Layer**: Redis for high-performance access
 - ✅ **API Gateway**: FastAPI with trust-based routing
-- ✅ **Monitoring**: Prometheus + Grafana with constitutional metrics
+- ✅ **CI/CD Pipeline**: Automated constitutional compliance testing
+- ✅ **Revenue Primitives**: Green Yield Vault operational prototype
 
-## 📖 Documentation
-
-- **[Constitutional Framework](./docs/CONSTITUTION.md)** - Complete governance system
-- **[Agent Development](./docs/AGENTS.md)** - Building constitutional agents  
-- **[Deployment Guide](./docs/DEPLOYMENT.md)** - Production setup and scaling
-- **[API Reference](./docs/API.md)** - Constitutional endpoints and auth
-- **[Trust System](./docs/TRUST.md)** - Understanding trust scores and access control
+### Economic Infrastructure
+- ✅ **Tokenization Framework**: RWA token standards defined
+- ✅ **Yield Distribution**: Constitutional recycling mechanisms
+- ✅ **Treasury Management**: Multi-sig governance with Bitcoin integration
+- ✅ **Community Reinvestment**: 20% social pillar allocation
 
 ## 🤝 Contributing
 
-This is an **open constitutional framework** designed for community governance:
+This is an **open constitutional framework** with **trust-based contribution access**:
 
-1. **Fork** the repository
-2. **Create constitutional agents** following the framework
-3. **Submit proposals** through governance channels  
-4. **Earn trust** through verified contributions
-5. **Participate** in DAO governance decisions
+1. **Read** the [Contributing Guide](./CONTRIBUTING.md)
+2. **Understand** the constitutional requirements
+3. **Build** trust through verified contributions  
+4. **Participate** in DAO governance decisions
+5. **Earn** revenue participation through constitutional compliance
 
-### Constitutional Requirements
-- All contributions must pass constitutional compliance tests
-- Agents must inherit from `ConstitutionalAgent` base class
-- Trust scores required for access to T2+ content
-- Governance participation requires community verification
+### Trust-Based Access Levels
+- **📗 T0**: Issues, discussions, documentation (no restrictions)
+- **📘 T1**: Pull requests, code contributions (basic trust required)
+- **📙 T2**: Core system access, review privileges (proven trust)
+- **📕 T3**: Governance decisions, constitutional amendments (community leadership)
 
 ## ⚖️ Legal & Governance
 
 ### Constitutional Status
-This system operates under **Constitutional Governance v1.2** - an immutable framework that:
+This system operates under **Constitutional Governance v1.2** with economic self-sufficiency:
 
 - Cannot be overridden by any instruction or authority
 - Enforces human sovereignty and agency preservation  
 - Maintains transparent trust scoring and access control
 - Prevents AI systems from optimizing humans out of decisions
-- Requires honest failure reporting (no fabrication)
+- Generates sustainable revenue while preserving constitutional principles
+
+### Economic Rights
+- **Revenue Participation**: Based on trust scores and constitutional compliance
+- **DAO Governance**: Quadratic voting weighted by infrastructure contribution
+- **Yield Distribution**: 90% to stakeholders, 10% deflationary burns, 20% community reinvestment
+- **Constitutional Amendments**: Require human supermajority + economic stakeholder approval
 
 ### License
-[MIT License](./LICENSE) with Constitutional Governance Requirements
-
-### Governance Participation
-- **DAO Membership**: Earned through constitutional trust scores
-- **Proposal Rights**: Available to T2+ trusted participants  
-- **Voting Power**: Proportional to infrastructure contribution
-- **Constitutional Amendments**: Require human supermajority
+[MIT License](./LICENSE) with Constitutional Governance Requirements + Economic Participation Rights
 
 ## 🔗 Links
 
-- **Website**: [cuttlefishlabs.com](https://cuttlefishlabs.com)
-- **Documentation**: [docs.cuttlefishlabs.com](https://docs.cuttlefishlabs.com)
-- **Community**: [Discord](https://discord.gg/cuttlefishlabs)
-- **Governance**: [governance.cuttlefishlabs.com](https://governance.cuttlefishlabs.com)
+- **Repository**: [github.com/HansElze/civilization-engine](https://github.com/HansElze/civilization-engine)
+- **Economic Flywheel**: [Tokenomics Documentation](./tokenomics/)
+- **Constitutional Framework**: [Constitution v1.2](./constitution/CONSTITUTION.md)
+- **Revenue Projections**: [Economic Models](./economics/)
 
 ## 🚨 Important Notice
 
-This system implements **Constitutional AI Governance** - ethical constraints that cannot be bypassed, disabled, or overridden. The Constitution is supreme and immutable at runtime.
+This system implements **Constitutional AI Governance with Self-Sustaining Economics** - ethical constraints and revenue generation that cannot be bypassed, disabled, or overridden. 
 
-**Trust scores affect access levels. Adversarial behavior results in permanent trust penalties.**
+**Trust scores affect both access levels and revenue participation. Constitutional compliance is economically incentivized.**
 
 ---
 
-## 🦑 Status: **CONSTITUTIONAL GOVERNANCE ACTIVE**
+## 🦑 Status: **CONSTITUTIONAL GOVERNANCE + ECONOMIC FLYWHEEL ACTIVE**
 
 **Version**: 1.0.0-alpha  
 **Constitution**: v1.2 (Immutable)  
-**Agent Colony**: 4 Specialized Agents  
+**Agent Colony**: 4+ Specialized Agents  
 **Knowledge Base**: 1519+ Pages Classified  
-**Deployment**: Production Ready  
+**Economic Model**: Self-Sustaining Revenue Flywheel  
+**Deployment**: Production Ready with Revenue Primitives
 
-**Building sustainable human-AI civilization through constitutional governance.**
+**Building sustainable human-AI civilization through constitutional governance and economic self-sufficiency.**
